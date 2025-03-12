@@ -6,6 +6,7 @@ import mongoose from "mongoose";
 
 interface DecodedToken extends JwtPayload {
   user: {
+    id:string;
     fullName: string;
     email: string;
     password: string;
